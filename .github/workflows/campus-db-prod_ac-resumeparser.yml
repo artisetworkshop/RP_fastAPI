@@ -61,6 +61,6 @@ jobs:
         uses: azure/webapps-deploy@v3
         id: deploy-to-webapp
         with:
-          app-name: 'AC-resumeparser'
+          app-name: 'resume-parsing-prod'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_7BA6BB041F4B45B8A6305962FCA82041 }}
+          publish-profile: ${{ secrets.AZURE_RESUMEPARSER_PUBLISH_PROFILE }}
